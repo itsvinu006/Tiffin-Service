@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - HomeTaste Tiffin Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-utensils"></i> HomeTaste</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="order.html" class="nav-link order-btn active">Order Now</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Place Your Order</h1>
+            <p>Fill in your details and preferences to start enjoying home-cooked meals</p>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section class="order-section">
+        <div class="container">
+            <div class="order-container">
+                <div class="order-form">
+                    <form id="orderForm">
+                        <div class="form-step active" id="step1">
+                            <h2>Step 1: Personal Information</h2>
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Delivery Address *</label>
+                                <textarea id="address" name="address" rows="3" required></textarea>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City *</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pincode">Pincode *</label>
+                                    <input type="text" id="pincode" name="pincode" required>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary next-step">Next Step</button>
+                        </div>
+
+                        <div class="form-step" id="step2">
+                            <h2>Step 2: Choose Your Plan</h2>
+                            <div class="plan-selection">
+                                <div class="plan-option">
+                                    <input type="radio" id="daily" name="plan" value="daily">
+                                    <label for="daily" class="plan-card">
+                                        <div class="plan-header">
+                                            <h3>Daily Plan</h3>
+                                            <div class="plan-price">₹330/day</div>
+                                        </div>
+                                        <ul class="plan-features">
+                                            <li>Breakfast + Lunch + Dinner</li>
+                                            <li>Fresh Daily Preparation</li>
+                                            <li>Free Delivery</li>
+                                            <li>No Commitment</li>
+                                        </ul>
+                                    </label>
+                                </div>
+                                <div class="plan-option">
+                                    <input type="radio" id="weekly" name="plan" value="weekly" checked>
+                                    <label for="weekly" class="plan-card featured">
+                                        <div class="plan-badge">Most Popular</div>
+                                        <div class="plan-header">
+                                            <h3>Weekly Plan</h3>
+                                            <div class="plan-price">₹2100/week</div>
+                                            <div class="plan-savings">Save ₹210</div>
+                                        </div>
+                                        <ul class="plan-features">
+                                            <li>All Daily Plan Benefits</li>
+                                            <li>10% Discount</li>
+                                            <li>Menu Customization</li>
+                                            <li>Priority Support</li>
+                                        </ul>
+                                    </label>
+                                </div>
+                                <div class="plan-option">
+                                    <input type="radio" id="monthly" name="plan" value="monthly">
+                                    <label for="monthly" class="plan-card">
+                                        <div class="plan-header">
+                                            <h3>Monthly Plan</h3>
+                                            <div class="plan-price">₹7920/month</div>
+                                            <div class="plan-savings">Save ₹990</div>
+                                        </div>
+                                        <ul class="plan-features">
+                                            <li>All Weekly Plan Benefits</li>
+                                            <li>20% Discount</li>
+                                            <li>Special Occasion Meals</li>
+                                            <li>Dedicated Support</li>
+                                        </ul>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-secondary prev-step">Previous</button>
+                                <button type="button" class="btn btn-primary next-step">Next Step</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" id="step3">
+                            <h2>Step 3: Meal Preferences</h2>
+                            <div class="meal-preferences">
+                                <div class="preference-group">
+                                    <h3>Meal Types</h3>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-item">
+                                            <input type="checkbox" name="meals" value="breakfast" checked>
+                                            <span class="checkmark"></span>
+                                            Breakfast (₹80)
+                                        </label>
+                                        <label class="checkbox-item">
+                                            <input type="checkbox" name="meals" value="lunch" checked>
+                                            <span class="checkmark"></span>
+                                            Lunch (₹120)
+                                        </label>
+                                        <label class="checkbox-item">
+                                            <input type="checkbox" name="meals" value="dinner" checked>
+                                            <span class="checkmark"></span>
+                                            Dinner (₹130)
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="preference-group">
+                                    <h3>Dietary Preferences</h3>
+                                    <div class="radio-group">
+                                        <label class="radio-item">
+                                            <input type="radio" name="diet" value="vegetarian" checked>
+                                            <span class="radiomark"></span>
+                                            Vegetarian
+                                        </label>
+                                        <label class="radio-item">
+                                            <input type="radio" name="diet" value="non-vegetarian">
+                                            <span class="radiomark"></span>
+                                            Non-Vegetarian
+                                        </label>
+                                        <label class="radio-item">
+                                            <input type="radio" name="diet" value="both">
+                                            <span class="radiomark"></span>
+                                            Both
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="preference-group">
+                                    <h3>Spice Level</h3>
+                                    <div class="radio-group">
+                                        <label class="radio-item">
+                                            <input type="radio" name="spice" value="mild" checked>
+                                            <span class="radiomark"></span>
+                                            Mild
+                                        </label>
+                                        <label class="radio-item">
+                                            <input type="radio" name="spice" value="medium">
+                                            <span class="radiomark"></span>
+                                            Medium
+                                        </label>
+                                        <label class="radio-item">
+                                            <input type="radio" name="spice" value="spicy">
+                                            <span class="radiomark"></span>
+                                            Spicy
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="allergies">Food Allergies / Special Requirements</label>
+                                    <textarea id="allergies" name="allergies" rows="3" placeholder="Please mention any food allergies or special dietary requirements"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-secondary prev-step">Previous</button>
+                                <button type="button" class="btn btn-primary next-step">Next Step</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" id="step4">
+                            <h2>Step 4: Delivery Details</h2>
+                            <div class="delivery-details">
+                                <div class="form-group">
+                                    <label for="startDate">Start Date *</label>
+                                    <input type="date" id="startDate" name="startDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="deliveryTime">Preferred Delivery Time</label>
+                                    <select id="deliveryTime" name="deliveryTime">
+                                        <option value="">Select Time Slot</option>
+                                        <option value="breakfast-7-9">Breakfast: 7:00 AM - 9:00 AM</option>
+                                        <option value="lunch-12-2">Lunch: 12:00 PM - 2:00 PM</option>
+                                        <option value="dinner-7-9">Dinner: 7:00 PM - 9:00 PM</option>
+                                        <option value="all-meals">All Meals (Different Times)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="instructions">Special Delivery Instructions</label>
+                                    <textarea id="instructions" name="instructions" rows="3" placeholder="Any special instructions for delivery (e.g., gate number, landmark, etc.)"></textarea>
+                                </div>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="weekend" value="yes">
+                                        <span class="checkmark"></span>
+                                        Include Weekend Delivery
+                                    </label>
+                                    <label class="checkbox-item">
+                                        <input type="checkbox" name="notifications" value="yes" checked>
+                                        <span class="checkmark"></span>
+                                        Send SMS/WhatsApp notifications
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-secondary prev-step">Previous</button>
+                                <button type="button" class="btn btn-primary next-step">Review Order</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" id="step5">
+                            <h2>Step 5: Order Summary</h2>
+                            <div class="order-summary">
+                                <div class="summary-section">
+                                    <h3>Personal Information</h3>
+                                    <div id="summaryPersonal"></div>
+                                </div>
+                                <div class="summary-section">
+                                    <h3>Selected Plan</h3>
+                                    <div id="summaryPlan"></div>
+                                </div>
+                                <div class="summary-section">
+                                    <h3>Meal Preferences</h3>
+                                    <div id="summaryPreferences"></div>
+                                </div>
+                                <div class="summary-section">
+                                    <h3>Delivery Details</h3>
+                                    <div id="summaryDelivery"></div>
+                                </div>
+                                <div class="total-amount">
+                                    <h3>Total Amount: <span id="totalAmount">₹2100</span></h3>
+                                </div>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-secondary prev-step">Previous</button>
+                                <button type="submit" class="btn btn-primary">Confirm Order</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="order-sidebar">
+                    <div class="progress-indicator">
+                        <div class="progress-step active" data-step="1">
+                            <div class="step-number">1</div>
+                            <div class="step-label">Personal Info</div>
+                        </div>
+                        <div class="progress-step" data-step="2">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Choose Plan</div>
+                        </div>
+                        <div class="progress-step" data-step="3">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Preferences</div>
+                        </div>
+                        <div class="progress-step" data-step="4">
+                            <div class="step-number">4</div>
+                            <div class="step-label">Delivery</div>
+                        </div>
+                        <div class="progress-step" data-step="5">
+                            <div class="step-number">5</div>
+                            <div class="step-label">Review</div>
+                        </div>
+                    </div>
+
+                    <div class="order-help">
+                        <h3>Need Help?</h3>
+                        <p>Our customer support team is here to assist you with your order.</p>
+                        <div class="help-contact">
+                            <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                            <p><i class="fas fa-envelope"></i> support@hometaste.com</p>
+                            <p><i class="fab fa-whatsapp"></i> WhatsApp Support</p>
+                        </div>
+                    </div>
+
+                    <div class="delivery-areas">
+                        <h3>Delivery Areas</h3>
+                        <ul>
+                            <li>Central Delhi</li>
+                            <li>South Delhi</li>
+                            <li>East Delhi</li>
+                            <li>West Delhi</li>
+                            <li>North Delhi</li>
+                            <li>Gurgaon</li>
+                            <li>Noida</li>
+                        </ul>
+                        <p class="delivery-note">Don't see your area? <a href="contact.html">Contact us</a> to check availability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3><i class="fas fa-utensils"></i> HomeTaste</h3>
+                        <p>Bringing the taste of home to your doorstep with fresh, nutritious, and delicious meals prepared with love.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="plans.html">Plans & Pricing</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Daily Tiffin</a></li>
+                        <li><a href="#">Weekly Plans</a></li>
+                        <li><a href="#">Monthly Subscription</a></li>
+                        <li><a href="#">Custom Orders</a></li>
+                        <li><a href="#">Bulk Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +91 7283929474</p>
+                        <p><i class="fas fa-envelope"></i> vinushukla8989@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Parul University, Vadodara, Gujarat 391760</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sun: 6:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HomeTaste Tiffin Service. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let currentStep = 1;
+            const totalSteps = 5;
+
+            // Set minimum date to today
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('startDate').setAttribute('min', today);
+
+            // Step navigation
+            document.querySelectorAll('.next-step').forEach(button => {
+                button.addEventListener('click', function() {
+                    if (validateStep(currentStep)) {
+                        nextStep();
+                    }
+                });
+            });
+
+            document.querySelectorAll('.prev-step').forEach(button => {
+                button.addEventListener('click', function() {
+                    prevStep();
+                });
+            });
+
+            function nextStep() {
+                if (currentStep < totalSteps) {
+                    document.getElementById(`step${currentStep}`).classList.remove('active');
+                    document.querySelector(`.progress-step[data-step="${currentStep}"]`).classList.remove('active');
+                    document.querySelector(`.progress-step[data-step="${currentStep}"]`).classList.add('completed');
+                    
+                    currentStep++;
+                    
+                    document.getElementById(`step${currentStep}`).classList.add('active');
+                    document.querySelector(`.progress-step[data-step="${currentStep}"]`).classList.add('active');
+                    
+                    if (currentStep === 5) {
+                        updateOrderSummary();
+                    }
+                }
+            }
+
+            function prevStep() {
+                if (currentStep > 1) {
+                    document.getElementById(`step${currentStep}`).classList.remove('active');
+                    document.querySelector(`.progress-step[data-step="${currentStep}"]`).classList.remove('active');
+                    
+                    currentStep--;
+                    
+                    document.getElementById(`step${currentStep}`).classList.add('active');
+                    document.querySelector(`.progress-step[data-step="${currentStep}"]`).classList.add('active');
+                    document.querySelector(`.progress-step[data-step="${currentStep}"]`).classList.remove('completed');
+                }
+            }
+
+            function validateStep(step) {
+                const currentStepElement = document.getElementById(`step${step}`);
+                const requiredFields = currentStepElement.querySelectorAll('[required]');
+                let isValid = true;
+
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        field.style.borderColor = '#e74c3c';
+                        isValid = false;
+                    } else {
+                        field.style.borderColor = '#ddd';
+                    }
+                });
+
+                if (step === 2) {
+                    const planSelected = document.querySelector('input[name="plan"]:checked');
+                    if (!planSelected) {
+                        alert('Please select a plan');
+                        isValid = false;
+                    }
+                }
+
+                return isValid;
+            }
+
+            function updateOrderSummary() {
+                // Personal Information
+                const personalInfo = `
+                    <p><strong>Name:</strong> ${document.getElementById('fullName').value}</p>
+                    <p><strong>Phone:</strong> ${document.getElementById('phone').value}</p>
+                    <p><strong>Email:</strong> ${document.getElementById('email').value || 'Not provided'}</p>
+                    <p><strong>Address:</strong> ${document.getElementById('address').value}</p>
+                    <p><strong>City:</strong> ${document.getElementById('city').value}</p>
+                    <p><strong>Pincode:</strong> ${document.getElementById('pincode').value}</p>
+                `;
+                document.getElementById('summaryPersonal').innerHTML = personalInfo;
+
+                // Selected Plan
+                const selectedPlan = document.querySelector('input[name="plan"]:checked').value;
+                const planDetails = {
+                    daily: { name: 'Daily Plan', price: '₹330/day' },
+                    weekly: { name: 'Weekly Plan', price: '₹2100/week' },
+                    monthly: { name: 'Monthly Plan', price: '₹7920/month' }
+                };
+                const planInfo = `
+                    <p><strong>Plan:</strong> ${planDetails[selectedPlan].name}</p>
+                    <p><strong>Price:</strong> ${planDetails[selectedPlan].price}</p>
+                `;
+                document.getElementById('summaryPlan').innerHTML = planInfo;
+
+                // Meal Preferences
+                const selectedMeals = Array.from(document.querySelectorAll('input[name="meals"]:checked')).map(cb => cb.value);
+                const dietType = document.querySelector('input[name="diet"]:checked').value;
+                const spiceLevel = document.querySelector('input[name="spice"]:checked').value;
+                const allergies = document.getElementById('allergies').value;
+
+                const preferencesInfo = `
+                    <p><strong>Meals:</strong> ${selectedMeals.join(', ')}</p>
+                    <p><strong>Diet:</strong> ${dietType}</p>
+                    <p><strong>Spice Level:</strong> ${spiceLevel}</p>
+                    <p><strong>Allergies/Requirements:</strong> ${allergies || 'None'}</p>
+                `;
+                document.getElementById('summaryPreferences').innerHTML = preferencesInfo;
+
+                // Delivery Details
+                const startDate = document.getElementById('startDate').value;
+                const deliveryTime = document.getElementById('deliveryTime').value;
+                const instructions = document.getElementById('instructions').value;
+                const weekend = document.querySelector('input[name="weekend"]:checked') ? 'Yes' : 'No';
+                const notifications = document.querySelector('input[name="notifications"]:checked') ? 'Yes' : 'No';
+
+                const deliveryInfo = `
+                    <p><strong>Start Date:</strong> ${startDate}</p>
+                    <p><strong>Delivery Time:</strong> ${deliveryTime || 'Not specified'}</p>
+                    <p><strong>Weekend Delivery:</strong> ${weekend}</p>
+                    <p><strong>Notifications:</strong> ${notifications}</p>
+                    <p><strong>Instructions:</strong> ${instructions || 'None'}</p>
+                `;
+                document.getElementById('summaryDelivery').innerHTML = deliveryInfo;
+            }
+
+            // Form submission
+            document.getElementById('orderForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your order! We will contact you shortly to confirm the details and arrange payment.');
+                // Here you would typically send the form data to your server
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - HomeTaste Tiffin Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-utensils"></i> HomeTaste</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                    
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="order.html" class="nav-link order-btn">Order Now</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Delicious home-cooked meals prepared fresh daily</p>
+        </div>
+    </section>
+
+    <!-- Menu Tabs -->
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-tabs">
+                <button class="tab-button active" data-tab="breakfast">Breakfast</button>
+                <button class="tab-button" data-tab="lunch">Lunch</button>
+                <button class="tab-button" data-tab="dinner">Dinner</button>
+                <button class="tab-button" data-tab="weekly">Weekly Menu</button>
+            </div>
+
+            <!-- Breakfast Menu -->
+            <div class="tab-content active" id="breakfast">
+                <div class="menu-grid">
+                    <div class="menu-item-card">
+                        <div class="menu-image">
+                            <img src="Alooparatha.jpg" alt="Aloo Paratha">
+                        </div>
+                        <div class="menu-details">
+                            <h3>Aloo Paratha Combo</h3>
+                            <p>2 Aloo Parathas, Curd, Pickle, Butter</p>
+                            <div class="menu-price">₹80</div>
+                            <div class="menu-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag popular">Popular</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <div class="menu-image">
+                            <img src="Poha.webp" alt="Poha">
+                        </div>
+                        <div class="menu-details">
+                            <h3>Poha Special</h3>
+                            <p>Poha with Peanuts, Onions, Green Chutney</p>
+                            <div class="menu-price">₹60</div>
+                            <div class="menu-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag light">Light</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <div class="menu-image">
+                            <img src="Upma.jpg" alt="Upma">
+                        </div>
+                        <div class="menu-details">
+                            <h3>Upma Breakfast</h3>
+                            <p>Rava Upma with Vegetables, Coconut Chutney</p>
+                            <div class="menu-price">₹70</div>
+                            <div class="menu-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag healthy">Healthy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <div class="menu-image">
+                            <img src="veg-grilled-sandwich1.webp" alt="Sandwich">
+                        </div>
+                        <div class="menu-details">
+                            <h3>Grilled Sandwich</h3>
+                            <p>Vegetable Grilled Sandwich with Mint Chutney</p>
+                            <div class="menu-price">₹90</div>
+                            <div class="menu-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag quick">Quick</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lunch Menu -->
+            <div class="tab-content" id="lunch">
+                <div class="menu-grid">
+                    <div class="menu-item-card">
+                        <div class="menu-image">
+                            <img src="rajmarice.jpeg" alt="Rajma Rice">
+                        </div>
+                        <div class="menu-details">
+                            <h3>Rajma Rice Thali</h3>
+                            <p>Rajma, Basmati Rice, Salad</p>
+                            <div class="menu-price">₹120</div>
+                            <div class="menu-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag protein">High Protein</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <div class="menu-image">
+                            <img src="dalricecombo.webp" alt="Dal Chawal">
+                        </div>
+                        <div class="menu-details">
+                            <h3>Dal Chawal Combo</h3>
+                            <p>Yellow Dal, Rice, Roti, Aloo Sabji, Papad</p>
+                            <div class="menu-price">₹100</div>
+                            <div class="menu-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag comfort">Comfort Food</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <div class="menu-image">
+                            <img src="cholebhature.jpg" alt="Chole Bhature">
+                        </div>
+                        <div class="menu-details">
+                            <h3>Chole Bhature</h3>
+                            <p>Spicy Chole, 2 Bhature, Onion, Pickle</p>
+                            <div class="menu-price">₹140</div>
+                            <div class="menu-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag spicy">Spicy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <div class="menu-image">
+                            <img src="rajasthanithali.webp" alt="Rajasthani Thali">
+                        </div>
+                        <div class="menu-details">
+                            <h3>Rajasthani Thali</h3>
+                            <p>Dal,batti,curd,churma,sabzi</p>
+                            <div class="menu-price">₹180</div>
+                            <div class="menu-tags">
+                                <span class="tag vegetarian">vegetarian</span>
+                                <span class="tag Healthy">Healthy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dinner Menu -->
+            <div class="tab-content" id="dinner">
+                <div class="menu-grid">
+                    <div class="menu-item-card">
+                        <div class="menu-image">
+                            <img src="lunchpaneer.jpg" alt="Paneer Curry">
+                        </div>
+                        <div class="menu-details">
+                            <h3>Paneer Butter Masala</h3>
+                            <p>Paneer Curry, Rice, Naan, Raita, Sweet</p>
+                            <div class="menu-price">₹150</div>
+                            <div class="menu-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag rich">Rich</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <div class="menu-image">
+                            <img src="lunchmixveg.jpg" alt="Mixed Veg">
+                        </div>
+                        <div class="menu-details">
+                            <h3>Mixed Veg Thali</h3>
+                            <p>Mixed Vegetables, Dal, Rice, Roti, Curd</p>
+                            <div class="menu-price">₹130</div>
+                            <div class="menu-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag healthy">Healthy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <div class="menu-image">
+                            <img src="lunchjackfruit.jpg" alt="jackfruit Curry">
+                        </div>
+                        <div class="menu-details">
+                            <h3>jackfriut Curry Special</h3>
+                            <p>jackfriut, Rice, Pickle</p>
+                            <div class="menu-price">₹200</div>
+                            <div class="menu-tags">
+                                <span class="tag vegetarian">Veg</span>
+                                <span class="tag Protein">Protein</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <div class="menu-image">
+                            <img src="lunchbiryani.avif" alt="Biryani">
+                        </div>
+                        <div class="menu-details">
+                            <h3>Vegetable Biryani</h3>
+                            <p>Aromatic Veg Biryani, Raita, Pickle, Sweet</p>
+                            <div class="menu-price">₹160</div>
+                            <div class="menu-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag special">Special</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weekly Menu -->
+            <div class="tab-content" id="weekly">
+                <div class="weekly-menu">
+                    <h3>This Week's Special Menu</h3>
+                    <div class="weekly-grid">
+                        <div class="day-menu">
+                            <h4>Monday</h4>
+                            <div class="day-meals">
+                                <div class="meal">
+                                    <strong>Breakfast:</strong> Aloo Paratha + Curd
+                                </div>
+                                <div class="meal">
+                                    <strong>Lunch:</strong> Rajma Rice Thali
+                                </div>
+                                <div class="meal">
+                                    <strong>Dinner:</strong> Mixed Veg Thali
+                                </div>
+                            </div>
+                        </div>
+                        <div class="day-menu">
+                            <h4>Tuesday</h4>
+                            <div class="day-meals">
+                                <div class="meal">
+                                    <strong>Breakfast:</strong> Poha + Chutney
+                                </div>
+                                <div class="meal">
+                                    <strong>Lunch:</strong> Chole Bhature
+                                </div>
+                                <div class="meal">
+                                    <strong>Dinner:</strong> Paneer Butter Masala
+                                </div>
+                            </div>
+                        </div>
+                        <div class="day-menu">
+                            <h4>Wednesday</h4>
+                            <div class="day-meals">
+                                <div class="meal">
+                                    <strong>Breakfast:</strong> Upma + Coconut Chutney
+                                </div>
+                                <div class="meal">
+                                    <strong>Lunch:</strong> Dal Chawal Combo
+                                </div>
+                                <div class="meal">
+                                    <strong>Dinner:</strong> Vegetable Biryani
+                                </div>
+                            </div>
+                        </div>
+                        <div class="day-menu">
+                            <h4>Thursday</h4>
+                            <div class="day-meals">
+                                <div class="meal">
+                                    <strong>Breakfast:</strong> Grilled Sandwich
+                                </div>
+                                <div class="meal">
+                                    <strong>Lunch:</strong> Chicken Curry Thali
+                                </div>
+                                <div class="meal">
+                                    <strong>Dinner:</strong> Fish Curry Special
+                                </div>
+                            </div>
+                        </div>
+                        <div class="day-menu">
+                            <h4>Friday</h4>
+                            <div class="day-meals">
+                                <div class="meal">
+                                    <strong>Breakfast:</strong> Aloo Paratha + Pickle
+                                </div>
+                                <div class="meal">
+                                    <strong>Lunch:</strong> Rajma Rice Thali
+                                </div>
+                                <div class="meal">
+                                    <strong>Dinner:</strong> Mixed Veg Thali
+                                </div>
+                            </div>
+                        </div>
+                        <div class="day-menu">
+                            <h4>Saturday</h4>
+                            <div class="day-meals">
+                                <div class="meal">
+                                    <strong>Breakfast:</strong> Poha Special
+                                </div>
+                                <div class="meal">
+                                    <strong>Lunch:</strong> Chole Bhature
+                                </div>
+                                <div class="meal">
+                                    <strong>Dinner:</strong> Paneer Butter Masala
+                                </div>
+                            </div>
+                        </div>
+                        <div class="day-menu special">
+                            <h4>Sunday Special</h4>
+                            <div class="day-meals">
+                                <div class="meal">
+                                    <strong>Breakfast:</strong> Special Paratha + Lassi
+                                </div>
+                                <div class="meal">
+                                    <strong>Lunch:</strong> Special Thali + Sweet
+                                </div>
+                                <div class="meal">
+                                    <strong>Dinner:</strong> Biryani + Raita + Dessert
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Features -->
+    <section class="menu-features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Fresh Ingredients</h3>
+                    <p>We use only the freshest vegetables and spices sourced daily from local markets</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-heart"></i>
+                    <h3>Made with Love</h3>
+                    <p>Every meal is prepared with care and attention, just like home-cooked food</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Hygienic Preparation</h3>
+                    <p>Strict hygiene standards maintained throughout the cooking and packaging process</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>On-Time Delivery</h3>
+                    <p>Hot, fresh meals delivered right to your doorstep at your preferred time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Order?</h2>
+                <p>Choose your favorite meals and get them delivered fresh to your doorstep</p>
+                <div class="cta-buttons">
+                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                    <a href="plans.html" class="btn btn-secondary">View Plans</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3><i class="fas fa-utensils"></i> HomeTaste</h3>
+                        <p>Bringing the taste of home to your doorstep with fresh, nutritious, and delicious meals prepared with love.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="plans.html">Plans & Pricing</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Daily Tiffin</a></li>
+                        <li><a href="#">Weekly Plans</a></li>
+                        <li><a href="#">Monthly Subscription</a></li>
+                        <li><a href="#">Custom Orders</a></li>
+                        <li><a href="#">Bulk Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +91 7283929474</p>
+                        <p><i class="fas fa-envelope"></i> vinushukla8989@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Parul University, Vadodara, Gujarat 391760</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sun: 6:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HomeTaste Tiffin Service. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and contents
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Add active class to clicked button and corresponding content
+                    button.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HomeTaste Tiffin Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-utensils"></i> HomeTaste</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li><a href="order.html" class="nav-link order-btn">Order Now</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for any queries or support</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>We're here to help you with any questions about our tiffin service. Reach out to us through any of the following methods:</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Phone</h3>
+                                <p>+91 98765 43210</p>
+                                <p>+91 87654 32109</p>
+                                <span>Mon-Sun: 6:00 AM - 10:00 PM</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Email</h3>
+                                <p>info@hometaste.com</p>
+                                <p>support@hometaste.com</p>
+                                <span>We'll respond within 24 hours</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Address</h3>
+                                <p>123 Food Street</p>
+                                <p>Your City, State 123456</p>
+                                <span>Visit us for bulk orders</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>WhatsApp</h3>
+                                <p>+91 98765 43210</p>
+                                <p>Quick support & updates</p>
+                                <span>Available 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="new-order">New Order Inquiry</option>
+                                <option value="existing-order">Existing Order Support</option>
+                                <option value="menu-inquiry">Menu & Pricing Inquiry</option>
+                                <option value="delivery-area">Delivery Area Query</option>
+                                <option value="feedback">Feedback & Suggestions</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Please provide details about your inquiry..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for updates and special offers
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Areas -->
+    <section class="delivery-areas-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Delivery Areas</h2>
+                <p>We currently deliver to the following areas</p>
+            </div>
+            
+            <div class="areas-grid">
+                <div class="area-card">
+                    <h3>Central Delhi</h3>
+                    <ul>
+                        <li>Connaught Place</li>
+                        <li>India Gate</li>
+                        <li>Karol Bagh</li>
+                        <li>Paharganj</li>
+                        <li>Rajouri Garden</li>
+                    </ul>
+                </div>
+                
+                <div class="area-card">
+                    <h3>South Delhi</h3>
+                    <ul>
+                        <li>Lajpat Nagar</li>
+                        <li>Greater Kailash</li>
+                        <li>Saket</li>
+                        <li>Vasant Kunj</li>
+                        <li>Hauz Khas</li>
+                    </ul>
+                </div>
+                
+                <div class="area-card">
+                    <h3>East Delhi</h3>
+                    <ul>
+                        <li>Laxmi Nagar</li>
+                        <li>Preet Vihar</li>
+                        <li>Mayur Vihar</li>
+                        <li>Patparganj</li>
+                        <li>Shahdara</li>
+                    </ul>
+                </div>
+                
+                <div class="area-card">
+                    <h3>West Delhi</h3>
+                    <ul>
+                        <li>Janakpuri</li>
+                        <li>Tilak Nagar</li>
+                        <li>Dwarka</li>
+                        <li>Uttam Nagar</li>
+                        <li>Vikaspuri</li>
+                    </ul>
+                </div>
+                
+                <div class="area-card">
+                    <h3>North Delhi</h3>
+                    <ul>
+                        <li>Civil Lines</li>
+                        <li>Model Town</li>
+                        <li>Pitampura</li>
+                        <li>Rohini</li>
+                        <li>Shalimar Bagh</li>
+                    </ul>
+                </div>
+                
+                <div class="area-card">
+                    <h3>NCR Areas</h3>
+                    <ul>
+                        <li>Gurgaon</li>
+                        <li>Noida</li>
+                        <li>Greater Noida</li>
+                        <li>Faridabad</li>
+                        <li>Ghaziabad</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="area-note">
+                <p><strong>Don't see your area listed?</strong> Contact us to check if we can extend our delivery service to your location. We're constantly expanding our reach!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our tiffin service</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are your delivery timings?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We deliver meals at the following times:</p>
+                        <ul>
+                            <li>Breakfast: 7:00 AM - 9:00 AM</li>
+                            <li>Lunch: 12:00 PM - 2:00 PM</li>
+                            <li>Dinner: 7:00 PM - 9:00 PM</li>
+                        </ul>
+                        <p>You can specify your preferred time slot when placing an order.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I place an order?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can place an order through:</p>
+                        <ul>
+                            <li>Our website's order form</li>
+                            <li>Phone call: +91 98765 43210</li>
+                            <li>WhatsApp: +91 98765 43210</li>
+                            <li>Email: info@hometaste.com</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept the following payment methods:</p>
+                        <ul>
+                            <li>Cash on Delivery</li>
+                            <li>UPI (Google Pay, PhonePe, Paytm)</li>
+                            <li>Bank Transfer</li>
+                            <li>Credit/Debit Cards</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I customize my meals?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer customization options including:</p>
+                        <ul>
+                            <li>Spice level preferences (mild, medium, spicy)</li>
+                            <li>Dietary restrictions (vegetarian, non-vegetarian)</li>
+                            <li>Food allergies accommodation</li>
+                            <li>Special requests for weekly/monthly plans</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What if I'm not satisfied with the food?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Customer satisfaction is our priority. If you're not happy with your meal:</p>
+                        <ul>
+                            <li>Contact us immediately at +91 98765 43210</li>
+                            <li>We'll investigate the issue promptly</li>
+                            <li>Replacement meal or refund will be provided</li>
+                            <li>We continuously improve based on feedback</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How far in advance should I place an order?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Order timing recommendations:</p>
+                        <ul>
+                            <li>Daily orders: At least 2 hours in advance</li>
+                            <li>Weekly plans: 1 day in advance</li>
+                            <li>Monthly plans: 2-3 days in advance</li>
+                            <li>Bulk orders: 1 week in advance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Tiffin Service?</h2>
+                <p>Join thousands of satisfied customers enjoying fresh, home-cooked meals daily</p>
+                <div class="cta-buttons">
+                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                    <a href="menu.html" class="btn btn-secondary">View Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3><i class="fas fa-utensils"></i> HomeTaste</h3>
+                        <p>Bringing the taste of home to your doorstep with fresh, nutritious, and delicious meals prepared with love.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="plans.html">Plans & Pricing</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Daily Tiffin</a></li>
+                        <li><a href="#">Weekly Plans</a></li>
+                        <li><a href="#">Monthly Subscription</a></li>
+                        <li><a href="#">Custom Orders</a></li>
+                        <li><a href="#">Bulk Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +91 7283929474</p>
+                        <p><i class="fas fa-envelope"></i> vinushukla8989@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i>Parul University, Vadodara, Gujarat 391760</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sun: 6:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HomeTaste Tiffin Service. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you within 24 hours.');
+            this.reset();
+        });
+
+        // FAQ accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const icon = question.querySelector('i');
+                
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all FAQ items
+                    faqItems.forEach(faq => {
+                        faq.classList.remove('active');
+                        faq.querySelector('.faq-answer').style.maxHeight = null;
+                        faq.querySelector('.faq-question i').style.transform = 'rotate(0deg)';
+                    });
+                    
+                    // Open clicked item if it wasn't active
+                    if (!isActive) {
+                        item.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+    </script>
+
+    <style>
+        /* Contact Page Specific Styles */
+        .contact-section {
+            padding: 60px 0;
+            background-color: white;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info h2,
+        .contact-form h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .contact-info p {
+            color: #7f8c8d;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .contact-methods {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #e67e22;
+        }
+
+        .method-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #e67e22;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .method-details h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .method-details p {
+            color: #2c3e50;
+            margin-bottom: 0.25rem;
+            font-weight: 600;
+        }
+
+        .method-details span {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+        }
+
+        /* Delivery Areas Section */
+        .delivery-areas-section {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .area-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 4px solid #e67e22;
+        }
+
+        .area-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .area-card ul {
+            list-style: none;
+        }
+
+        .area-card ul li {
+            padding: 0.5rem 0;
+            color: #7f8c8d;
+            border-bottom: 1px solid #e9ecef;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .area-card ul li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .area-card ul li:last-child {
+            border-bottom: none;
+        }
+
+        .area-note {
+            text-align: center;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .area-note p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 60px 0;
+            background-color: white;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border-bottom: 1px solid #e9ecef;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: #f8f9fa;
+        }
+
+        .faq-question h3 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .faq-question i {
+            color: #e67e22;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 1.5rem;
+        }
+
+        .faq-answer p {
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .faq-answer ul {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        .faq-answer ul li {
+            padding: 0.25rem 0;
+            color: #7f8c8d;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .faq-answer ul li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #e67e22;
+            font-weight: bold;
+        }
+
+        /* Responsive Design for Contact Page */
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .areas-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-methods {
+                gap: 1rem;
+            }
+
+            .contact-method {
+                padding: 1rem;
+            }
+
+            .method-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</body>
+</html>
